@@ -1,0 +1,6 @@
+package com.youngjoo.myproject;
+
+import android.support.v7.app.AppCompatActivity;
+
+public class BodyCheck extends AppCompatActivity {
+}
