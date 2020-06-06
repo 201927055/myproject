@@ -6,21 +6,21 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.CalendarView;
 
-public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MainActivity";
+    public class MainActivity extends AppCompatActivity {
+        private static final String TAG = "MainActivity";
 
-    private CalendarView mCalendarView;
-    private Button btnM;
-    private Button btnE;
+        private CalendarView mCalendarView;
+        private Button btnM;
+        private Button btnE;
 
-    @Override
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mCalendarView = findViewById(R.id.calendarView);
-        btnM = findViewById(R.id.measure);
-        btnM = findViewById(R.id.exercise);
+        mCalendarView = (CalendarView) findViewById(R.id.calendarView);
+        btnM = (Button) findViewById(R.id.measure);
+        btnE = (Button) findViewById(R.id.exercise);
 
         mCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
