@@ -1,4 +1,4 @@
-package com.youngjoo.myproject;
+package com.youngjoo.DietApp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

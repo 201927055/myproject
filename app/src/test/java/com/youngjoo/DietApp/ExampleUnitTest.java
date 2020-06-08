@@ -1,4 +1,4 @@
-package com.youngjoo.myproject;
+package com.youngjoo.DietApp;
 
 import org.junit.Test;
 
