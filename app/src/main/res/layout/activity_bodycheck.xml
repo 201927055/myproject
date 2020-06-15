@@ -25,19 +25,31 @@
         app:srcCompat="@drawable/bodycheck" />
 
     <EditText
-        android:id="@+id/n1"
-        android:layout_width="59dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginRight="55dp"
+        android:id="@+id/nT"
+        android:layout_width="75dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tall"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nW"
+        android:layout_width="75dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/n2"
+        android:id="@+id/n1"
         android:layout_width="59dp"
         android:layout_height="40dp"
         android:layout_marginStart="80dp"
@@ -46,6 +58,18 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/n2"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -106,6 +130,43 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="84dp"
+        android:text="키"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="몸무게"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/nW"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

@@ -4,41 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="410dp"
-        android:layout_height="417dp"
-        android:layout_marginTop="88dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="462dp"
+        android:layout_marginTop="72dp"
+        android:layout_weight="1"
+        android:maxDate="12/31/2100"
+        android:minDate="01/01/2000"
+        android:selectedWeekBackgroundColor="#94bfff"
+        android:showWeekNumber="false"
+        android:unfocusedMonthDateColor="#ffffff"
+        android:weekSeparatorLineColor="#e2efff"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/btnM"
         android:layout_width="wrap_content"
-        android:layout_height="46dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginEnd="89dp"
         android:layout_marginRight="89dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="92dp"
         android:text="지방도 체크하기"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnE"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginBottom="96dp"
         android:text="부위별 운동영상"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

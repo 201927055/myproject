@@ -18,14 +18,14 @@ import android.widget.CalendarView;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mCalendarView = findViewById(R.id.calendarView);
+        mCalendarView = findViewById(R.id.calendar);
         btnM = findViewById(R.id.btnM);
         btnE = findViewById(R.id.btnE);
 
         mCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(CalendarView calendarView, int year, int month, int day) {
-                String date = year + "/" + month + "/" + day;
+                String date = year + "/" + (month+1) + "/" + day;
 
                 Intent intent = new Intent(MainActivity.this, BodyCheck.class);
                 intent.putExtra("date",date);
