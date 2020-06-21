@@ -32,23 +32,81 @@ public class BodyCheck extends AppCompatActivity {
              nT = findViewById(R.id.nT);
              nW = findViewById(R.id.nW);
 
-             SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
-             String value = sharedPreferences.getString("figure","");
-             n1.setText(value);
+         SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
+         String value1 = sharedPreferences.getString("figure1","");
+         String value2 = sharedPreferences.getString("figure2","");
+         String value3 = sharedPreferences.getString("figure3","");
+         String value4 = sharedPreferences.getString("figure4","");
+         String value5 = sharedPreferences.getString("figure5","");
+         String value6 = sharedPreferences.getString("figure6","");
+         String value7 = sharedPreferences.getString("figure7","");
+         String valueT = sharedPreferences.getString("figureT","");
+         String valueW = sharedPreferences.getString("figureW","");
+
+             n1.setText(value1);
+             n2.setText(value2);
+             n3.setText(value3);
+             n4.setText(value4);
+             n5.setText(value5);
+             n6.setText(value6);
+             n7.setText(value7);
+             nT.setText(valueT);
+             nW.setText(valueW);
 
         }
 
         @Override
         protected void onDestroy() {
              super.onDestroy();
+            SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
 
-             SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
-             SharedPreferences.Editor editor = sharedPreferences.edit();
+            SharedPreferences.Editor editorT = sharedPreferences.edit();
+            String valueT = nT.getText().toString();
+            editorT.putString("figureT",valueT);
+            editorT.commit();
+
+            SharedPreferences.Editor editorW = sharedPreferences.edit();
+            String valueW = nW.getText().toString();
+            editorW.putString("figureW",valueW);
+            editorW.commit();
+
+            SharedPreferences.Editor editor1 = sharedPreferences.edit();
              //저장을 할때 Editor을 불러와줘야함
-             String value = n1.getText().toString();
-             editor.putString("figure",value);
-             //figure에 getText해서 저장해줌
-             editor.commit();
-             //실질적으로 저장(save한것)
+            String value1 = n1.getText().toString();
+            editor1.putString("figure1",value1);
+            editor1.commit();
+
+            SharedPreferences.Editor editor2 = sharedPreferences.edit();
+            String value2 = n2.getText().toString();
+            editor2.putString("figure2",value2);
+            editor2.commit();
+
+            SharedPreferences.Editor editor3 = sharedPreferences.edit();
+            String value3 = n3.getText().toString();
+            editor3.putString("figure3",value3);
+            editor3.commit();
+
+            SharedPreferences.Editor editor4 = sharedPreferences.edit();
+            String value4 = n4.getText().toString();
+            editor4.putString("figure4",value4);
+            editor4.commit();
+
+            SharedPreferences.Editor editor5 = sharedPreferences.edit();
+            String value5 = n5.getText().toString();
+            editor5.putString("figure5",value5);
+            editor5.commit();
+
+            SharedPreferences.Editor editor6 = sharedPreferences.edit();
+            String value6 = n6.getText().toString();
+            editor6.putString("figure6",value6);
+            editor6.commit();
+
+            SharedPreferences.Editor editor7 = sharedPreferences.edit();
+            String value7 = n7.getText().toString();
+            editor7.putString("figure7",value7);
+            //figure에 getText해서 저장해줌
+            editor7.commit();
+            //실질적으로 저장(save한것)
         }
+
 }
