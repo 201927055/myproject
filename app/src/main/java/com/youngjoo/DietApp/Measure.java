@@ -28,16 +28,15 @@ public class Measure extends AppCompatActivity {
 
 
         bb1.setOnClickListener( new View.OnClickListener()
-                                {
-                                    public void onClick(View v)
-                                    {
-                                        String height1 =  h1.getText().toString();
-                                        String weight1 =  w1.getText().toString();
-
-                                        double cons1 = Double.parseDouble(weight1) / Double.parseDouble(height1) / Double.parseDouble(height1);
-                                        c1.setText(Double.toString(cons1));
-                                    }
-                                }
+               {
+                 public void onClick(View v)
+                   {
+                   String height1 =  h1.getText().toString();
+                   String weight1 =  w1.getText().toString();
+                   double cons1 = Double.parseDouble(weight1) / Double.parseDouble(height1) / Double.parseDouble(height1);
+                   c1.setText(Double.toString(cons1));
+                   }
+               }
         );
 
     }

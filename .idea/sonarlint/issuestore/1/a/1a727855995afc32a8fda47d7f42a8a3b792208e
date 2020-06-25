@@ -1,2 +1,3 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(òä¼ðÿÿÿÿÿ
+i	java:S116"MRename this field "WB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•èÇÏ8¢ É‚®.

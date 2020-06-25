@@ -49,7 +49,6 @@ public class Exercise extends AppCompatActivity {
             view.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
                     FrameLayout.LayoutParams.MATCH_PARENT, Gravity.CENTER));
             v1.setOnKeyListener(new View.OnKeyListener(){
-                //뒤로가기 눌렀을때 앱으로 돌아가기
                 @Override
                 public boolean onKey(View v, int keyCode, KeyEvent event){
                     if(keyCode == KeyEvent.KEYCODE_BACK&&event.getAction()==KeyEvent.ACTION_DOWN){
@@ -59,6 +58,7 @@ public class Exercise extends AppCompatActivity {
                     return false;
                 }
             });
+            //뒤로가기 눌렀을때 앱으로 돌아가기
             videoCustomView= view;
             customView.setVisibility(View.VISIBLE);
             customView.bringToFront();

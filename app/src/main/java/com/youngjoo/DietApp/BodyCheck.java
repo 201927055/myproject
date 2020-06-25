@@ -32,16 +32,16 @@ public class BodyCheck extends AppCompatActivity {
              nT = findViewById(R.id.nT);
              nW = findViewById(R.id.nW);
 
-         SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
-         String value1 = sharedPreferences.getString("figure1","");
-         String value2 = sharedPreferences.getString("figure2","");
-         String value3 = sharedPreferences.getString("figure3","");
-         String value4 = sharedPreferences.getString("figure4","");
-         String value5 = sharedPreferences.getString("figure5","");
-         String value6 = sharedPreferences.getString("figure6","");
-         String value7 = sharedPreferences.getString("figure7","");
-         String valueT = sharedPreferences.getString("figureT","");
-         String valueW = sharedPreferences.getString("figureW","");
+             SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
+             String value1 = sharedPreferences.getString("figure1","");
+             String value2 = sharedPreferences.getString("figure2","");
+             String value3 = sharedPreferences.getString("figure3","");
+             String value4 = sharedPreferences.getString("figure4","");
+             String value5 = sharedPreferences.getString("figure5","");
+             String value6 = sharedPreferences.getString("figure6","");
+             String value7 = sharedPreferences.getString("figure7","");
+             String valueT = sharedPreferences.getString("figureT","");
+             String valueW = sharedPreferences.getString("figureW","");
 
              n1.setText(value1);
              n2.setText(value2);
@@ -61,8 +61,11 @@ public class BodyCheck extends AppCompatActivity {
             SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
 
             SharedPreferences.Editor editorT = sharedPreferences.edit();
+            //저장을 할때 Editor을 불러와줘야함
             String valueT = nT.getText().toString();
+            //figureT에 getText로 해서 넣음
             editorT.putString("figureT",valueT);
+            //실질적으로 저장(figureT에 실질적으로 save한것)
             editorT.commit();
 
             SharedPreferences.Editor editorW = sharedPreferences.edit();
@@ -71,7 +74,6 @@ public class BodyCheck extends AppCompatActivity {
             editorW.commit();
 
             SharedPreferences.Editor editor1 = sharedPreferences.edit();
-             //저장을 할때 Editor을 불러와줘야함
             String value1 = n1.getText().toString();
             editor1.putString("figure1",value1);
             editor1.commit();
@@ -104,9 +106,8 @@ public class BodyCheck extends AppCompatActivity {
             SharedPreferences.Editor editor7 = sharedPreferences.edit();
             String value7 = n7.getText().toString();
             editor7.putString("figure7",value7);
-            //figure에 getText해서 저장해줌
             editor7.commit();
-            //실질적으로 저장(save한것)
+
         }
 
 }

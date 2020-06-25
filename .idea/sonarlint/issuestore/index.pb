@@ -27,16 +27,8 @@ d
 4app/src/main/java/com/youngjoo/DietApp/Exercise.java,1\a\1a727855995afc32a8fda47d7f42a8a3b792208e
 h
 8app/src/main/java/com/youngjoo/DietApp/MainActivity.java,4\5\45f0e4c40060b86785e6755c2193e0fbc6e8f783
-Y
-)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
-R
-"app/src/main/res/values/colors.xml,9\6\969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
 R
 "app/src/main/res/values/styles.xml,f\7\f79cc2688e29fcbc286fda14ae07b27c9e83690f
-^
-.app/src/main/res/layout/activity_bodycheck.xml,7\1\71432b140f0a871e4b0145e829d9ffd4692d8dad
-\
-,app/src/main/res/layout/activity_measure.xml,2\d\2d12f7921ebc7d174cdfdf6d50cc307499ba58de
 L
 .idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
 X
@@ -54,3 +46,5 @@ A
 gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
+]
+-app/src/main/res/layout/activity_exercise.xml,9\1\91e264f437e985e17e0e87d04e127c80d4292380
